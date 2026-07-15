@@ -5,6 +5,11 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <OverrideHtmlAssetPlaceholders>true</OverrideHtmlAssetPlaceholders>
+    <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
+    <Title>Fluent Icons</Title>
+    <Authors>Ashkan SLVZ</Authors>
+    <Company>SLVZ</Company>
+    <Product>Fluent Icons</Product>
   </PropertyGroup>
 
   <ItemGroup>
