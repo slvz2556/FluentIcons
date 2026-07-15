@@ -98,35 +98,6 @@ body {
     --selected-background: linear-gradient(20deg,#3c92da2c,#6767c938);
 }
 
-:root .dark {
-    --font-bold-color: #fff;
-    --font-light-color: #dcdcdc;
-
-    --scroll-background:#0c1533;
-
-    --boxshadow: 0px 1px 10px 5px #1e1e1e;
-    --boxshadow2: 0px 1px 7px 2px #171d27;
-
-    --card-color: #0e1726;
-    --card-border:1px solid #17253d;
-
-    --header-color:#000;
-
-    --input-color:#000;
-
-    --btn-color: #1b1b1b;
-    --btn-hover-color:#363636;
-
-    --selected-menu:#363636;
-
-    --slide-card-color:rgba(0,0,0,.5);
-    --slide-card-border:1px solid #cccccc;
-
-     --even-table-color: #efefef;
-}
-
-
-
 .btn-default {
     background-color: var(--btn-color);
     color: var(--font-light-color) !important;
@@ -165,3 +136,47 @@ body {
 
 
 
+._container {
+    display: grid;
+    height: calc(100vh - 20px);
+    width: 100%;
+}
+._center {
+    width: 300px;
+    height:fit-content;
+    position:relative;
+    justify-self:center;
+    align-self:center;
+}
+
+.div-loading {
+    position: relative;
+    width: calc(100% - 20px);
+    margin: 10px;
+    overflow: hidden;
+}
+.div-loading div {
+    height: 2px;
+    width: 200%;
+    background: var(--primary-color);
+    border-radius: 1px;
+    position: relative;
+    animation-name: loading-animation;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes loading-animation {
+    0% {
+        left: -210%;
+    }
+
+    90% {
+        left: 210%;
+    }
+
+    100% {
+        left: 210%;
+    }
+}
