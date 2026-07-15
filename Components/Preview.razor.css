@@ -1,0 +1,123 @@
+.container {
+    position: fixed;
+    overflow: auto;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,.2);
+    backdrop-filter: blur(3px);
+    display: grid;
+}
+.dialog {
+    width: calc(100% - 20px);
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+    height: fit-content;
+    margin-bottom: 20px;
+    max-width: 400px;
+    max-height: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column;
+}
+
+
+.header{
+    position:relative;
+    width:100%;
+    height:40px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.close {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    margin-left: 10px;
+    display: grid;
+}
+.close svg{
+    position:relative;
+    height:15px;
+    width:15px;
+    justify-self:center;
+    align-self:center;
+}
+
+
+.list {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    padding: 20px 0 20px 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.item {
+    position: relative;
+    width: 100px;
+    margin:5px;
+    height:fit-content;
+    border-radius: 15px;
+}
+.item:active{
+    transform:scale(.99);
+}
+.item img{
+    width:calc(100% - 20px);
+    aspect-ratio:1/1;
+    margin:10px;
+    position:relative;
+    pointer-events:none;
+}
+.selected {
+    background: var(--selected-background);
+    box-shadow: var(--boxshadow);
+}
+
+
+
+.buttons{
+    position:relative;
+    height:40px;
+    width:calc(100% - 20px);
+    margin:20px 10px 10px 10px;
+    display:flex;
+    justify-content:space-around;
+}
+.buttons button{
+    border-radius:10px;
+    height:40px;
+    width:calc(50% - 10px);
+    border:none;
+    display:flex;
+    justify-content:safe center;
+    align-content:center;
+}
+.buttons label{
+    position:relative;
+    align-self:center;
+    font-family:var(--font-light);
+    font-size:var(--font-light-size);
+}
+.buttons svg{
+    height:22px;
+    position:relative;
+    width:22px;
+    align-self:center;
+    margin-right:5px;
+}
